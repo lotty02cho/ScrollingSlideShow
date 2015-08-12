@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>A Fullscreen Slideshow using Skrollr.js</title>
+<meta name="description"
+	content="create a fullscreen slideshow">
+
+<!--iOS -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+	<div id="page-content">
+		<img src="img/dodolTitle_small.png" width="100" height="100" title="Scroll down" class="dodolDown skrollable skrollable-between"
+			data-0p="opacity: 1;" data-40p="opacity: 0;"
+			data-anchor-target="#helper" style="opacity: 1;">
+		<div id="slides-container">
+			<div id="slides" data-0="transform:translate(0%,0%);"
+				data-150p="transform:translate(0%,-50%);" data-200p=""
+				data-300p="transform:translate(-50%,-50%);" data-350p=""
+				data-450p="transform:translate(-50%,0%);">
+				<div id="slide-1" class="slide">
+					<div class="caption"
+						data-40p="opacity: 1; transform:translate(0px,0px);"
+						data-70p="opacity: 0; transform:translate(0px,-100%);"
+						data-anchor-target="#helper">
+						<h1>Sleek > Fast performance with style</h1>
+						<p>Accelerate your startup speed by 100%! Make your apps load quicker, search the net with speed.</p>
+					</div>
+				</div>
+				<div id="slide-2" class="slide">
+					<div class="caption"
+						data-130p="opacity: 0; transform:translate(0px,-200%);"
+						data-180p="opacity: 1; transform:translate(0px,0px);" data-250p=""
+						data-280p="opacity: 0; transform:translate(-100px,0px);"
+						data-anchor-target="#helper">
+						<h1>Smart > Organize your phone to your needs</h1>
+						<p>Automatically organizes your apps into intelligent folders based on your habits, and recommends the apps that are popular with people. </p>
+					</div>
+				</div>
+				<div id="slide-3" class="slide">
+					<div class="caption"
+						data-250p="opacity: 0; transform:translate(300px,0px);"
+						data-300p="opacity: 1; transform:translate(0px,0px);"
+						data-anchor-target="#helper">
+						<h1>Secure > Protect your personal info and app data</h1>
+						<p>which protects your personal info and app data, as well as blocking viruses and malware.</p>
+					</div>
+				</div>
+				<div id="slide-4" class="slide">
+					<div class="caption" data-430p="opacity: 0;"
+						data-450p="opacity: 1;" data-anchor-target="#helper">
+						<h1>Small > Lightweight design and smooth interface</h1>
+						<p>Just 2MB, Line Launcher dramatically improves your device while being the most lightweight launcher in the world.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="helper">
+			<div class="marker red"></div>
+			<div class="marker green"></div>
+			<div class="marker blue"></div>
+			<div class="marker yellow"></div>
+		</div>
+
+
+
+
+
+	</div>
+	<!-- /Demo content -->
+
+	<!-- Include Skrollr.js -->
+	<script src="js/skrollr.min.js"></script>
+	<script type="text/javascript">
+		var s = skrollr.init();
+	</script>
+
+
+</body>
+</html>
